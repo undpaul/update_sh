@@ -1,5 +1,6 @@
-
-# Ensure we got all symlinks on the local system we need to have.
+################################################################################
+# Ensure we got all symlinks on the stage we currently are.
+################################################################################
 
 # We quit this script part if no stage indicator was set.
 if [ "$STAGE_INDICATOR" == "" ]
