@@ -1,0 +1,11 @@
+.svn
+*.komodoproject
+*.komodotools
+.DS_Store
+Thumbs.db
+.project
+.buildpath
+.settings
+*.esproj
+nbproject
+.idea
