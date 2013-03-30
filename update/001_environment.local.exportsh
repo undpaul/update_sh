@@ -1,0 +1,9 @@
+################################################################################
+# We use this file to set up some stage specific parameters.
+################################################################################
+
+# Unless we specify a drushrc.php we need to provide a uri to drush commands.
+export $DRUPAL_URI=http://example.dev
+
+# For setting up some symlinks and co we use a stage indicator.
+export $STAGE_INDICATOR=local

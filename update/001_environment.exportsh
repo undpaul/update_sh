@@ -1,0 +1,37 @@
+################################################################################
+#
+# This script helps to set up some basic variables that may be reused in later
+# scripts and are not tag/stage specific.
+#
+# With the help of DRUPAL_ROOT_HELP and DRUPAL_SITE_HELP we derive
+#
+# - DRUPAL_ROOT: the absolute path of the drupal root directory
+# - DRUPAL_SITE: the absolute path of the drupal sites directory
+#                (e.g. sites/default)
+#
+################################################################################
+
+# In our default case we are located in sites/all/scripts/update so have to go
+# back four directories.
+DRUPAL_ROOT_HELP="../../../.."
+
+# By default sites/default is used.
+DRUPAL_SITES_HELP="sites/default"
+
+######## DERIVATION: Do NOT change lines below!! ###############################
+
+# Store this directory to navigate back after retrieving directory information.
+TEMP_THIS_DIR=$(pwd)
+
+# Let's calculate the DRUPAL_ROOT directory by navigating there with the helper
+# and then store the absolute path.
+cd $DRUPAL_ROOT_HELP
+export DRUPAL_ROOT=$(pwd)
+
+cd $DRUPAL_SITE_HELP
+export DRUPAL_SITE=$(pwd)
+
+# Navigate back to this directory.
+cd $TEMP_THIS_DIR
+
+################################################################################
