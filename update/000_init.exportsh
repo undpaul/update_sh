@@ -1,0 +1,7 @@
+
+# Stop script run, when no tag is given.
+if [ "$TAGS" == "" ]
+then
+  echo "No tags given! You have to execute the command like 'sh update.sh local'"
+  exit 1
+fi

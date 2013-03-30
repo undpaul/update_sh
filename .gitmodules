@@ -1,0 +1,3 @@
+[submodule "shellwrapper"]
+	path = shellwrapper
+	url = git://github.com/undpaul/shellwrapper.git
