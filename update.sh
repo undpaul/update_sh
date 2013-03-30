@@ -1,22 +1,15 @@
+#!/bin/bash
 ################################################################################
-# Shell and drush commands to update the given installation
+# Wrapper script to call all scripts located in the /update folder.
 #
-# Go to sites/all/scripts (e.g. cd sites/all/scripts) and type "sh update.sh"
-# in your console/shell/Terminal.
+# The wrapper uses the shellwrapper from https://github.com/undpaul/shellwrapper
+# to execute multiple
 #
-# The commands have to be functional for any case after the initial installation
-# installation. So on any set up after calling that script, the configuration
-# must be the same.
-#
-# For example:
-# ------------
-# When the script enabled a module in an earlier revision and that module shall
-# not be enabled in the current revision, we have to add a "drush dis" and a
-# "drush pm-uninstall" command for that module to this script.
+# See README.md for more information.
 #
 ################################################################################
 
-# Normalize by relocating to the current scripts folder.
+# Ensure we call from the current script file directory.
 cd "$(dirname ${0})"
 
 # Calling all scripts in the update folder and passing the first argument as tag.
