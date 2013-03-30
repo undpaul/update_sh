@@ -4,7 +4,7 @@
 
 # Unless we specify a drushrc.php we need to provide a uri to drush commands for
 # some modules to work correctly (e.g. domain.module).
-export $DRUPAL_URI=http://dev.example.com
+export DRUPAL_URI=http://dev.example.com
 
 # For setting up some symlinks and co we use a stage indicator.
-export $STAGE_INDICATOR=develop
+export STAGE_INDICATOR=develop
