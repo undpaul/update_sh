@@ -16,11 +16,12 @@
 #
 ################################################################################
 
-# Normalize be relocating to the current scripts folder.
+# Normalize by relocating to the current scripts folder.
 cd "$(dirname ${0})"
 
 # Calling all scripts in the update folder and passing the first argument as tag.
-# The script uses the shellwrapper to split up commands in mutliple files. That
-# way we can better maintain them, and also are able to execute stage specific
+# The script uses the shellwrapper to split up commands in multiple files. That
+# way we can better maintain them and also are able to execute stage specific
 # commands by using the "tag" argument.
+# The tag argument is passed from this
 bash ./shellwrapper/shellwrapper.sh ../update ${1}

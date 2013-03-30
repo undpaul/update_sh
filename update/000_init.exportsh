@@ -1,3 +1,24 @@
+################################################################################
+#
+# We force the user that runs the script to specify one ore more tags. As in
+# nearly all use cases we will deal with multiple stage environments the most
+# common tags to be used are "stage tags" like:
+#
+# - local: for the local dev's environment
+# - develop: for the development/integration installation
+# - stage: for the final test environment that is used right before the rollout
+# - live: for the live environment installation
+#
+# Tags can be used for other purposes too. They are simply the first argument
+# the shellwrapper script is called with. So you can use it for what you like,
+# just call the script the way you like.
+#
+#
+# Example for the update.sh:
+# - bash update.sh local
+# - bash update.sh live
+#
+################################################################################
 
 # Stop script run, when no tag is given.
 if [ "$TAGS" == "" ]
