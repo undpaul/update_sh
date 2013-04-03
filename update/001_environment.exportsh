@@ -16,7 +16,7 @@
 DRUPAL_ROOT_HELP="../../../.."
 
 # By default sites/default is used.
-DRUPAL_SITES_HELP="sites/default"
+DRUPAL_SITE_HELP="sites/default"
 
 ######## DERIVATION: Do NOT change lines below!! ###############################
 
