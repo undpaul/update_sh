@@ -78,6 +78,11 @@ way would to locate it outside of the docroot, but then you have to take in mind
 that the drush command for that application is only available with ajdusting the
 root directory (--root in drush command or cd to the drupal root).
 
+## Installation
+
+If the shellwrapper folder is empty, you have to download it from
+https://github.com/undpaul/shellwrapper and place it in /shellwrapper.
+
 ## Contact
 
 Originally created by Johannes Haseitl - johannes@undpaul.de
