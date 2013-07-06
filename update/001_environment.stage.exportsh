@@ -7,4 +7,8 @@
 export DRUPAL_URI=http://stage.example.com
 
 # For setting up some symlinks and co we use a stage indicator.
-export STAGE_INDICATOR=live
+export STAGE_INDICATOR=stage
+
+# Set a flag for a valid stage, we can reuse later, to check if the indicator
+# is set correctly.
+export STAGE_VALID=1
