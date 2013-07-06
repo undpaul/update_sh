@@ -6,6 +6,9 @@
 # @see http://drupal.org/project/master
 drush $DRUSH_PARAMS --yes pm-enable master
 
+# Make sure master module commands are available.
+drush $DRUSH_PARAMS cc drush
+
 # And finally execute master.
 drush $DRUSH_PARAMS --yes master-ensure-modules --scope=$STAGE_INDICATOR
 
