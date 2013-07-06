@@ -11,13 +11,15 @@
 #
 ################################################################################
 
-# In our default case we are located in sites/all/scripts/update so have to go
-# back four directories.
-DRUPAL_ROOT_HELP="../../../.."
+# In our default case we are located outside of the docroot (in /scripts/update)
+# so have to go back two directories.
+DRUPAL_ROOT_HELP="../../docroot"
 
 # By default sites/default is used.
-DRUPAL_SITE_HELP="sites/default"
-
+if [[ "DRUPAL_SITE_HELP" == "" ]]
+then
+  DRUPAL_SITE_HELP="sites/default"
+fi
 ######## DERIVATION: Do NOT change lines below!! ###############################
 
 # Store this directory to navigate back after retrieving directory information.

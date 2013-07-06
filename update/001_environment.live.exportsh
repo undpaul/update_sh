@@ -9,6 +9,10 @@ export DRUPAL_URI=http://www.example.com
 # For setting up some symlinks and co we use a stage indicator.
 export STAGE_INDICATOR=live
 
+# Setting a custom sites dir.
+# @see 002_environment_auto.exportsh
+export DRUPAL_SITE_HELP=sites/example.com
+
 # Set a flag for a valid stage, we can reuse later, to check if the indicator
 # is set correctly.
 export STAGE_VALID=1
