@@ -16,8 +16,11 @@ cd $DRUPAL_SITE
 if [ ! -f settings.php ]
 then
   ln -s "settings.$STAGE_INDICATOR.php" settings.php
+elif [ -L settings.php ]
+then
+  echo "settings.php already present as symlink"
 else
-  echo "settings.php already present"
+  echo "settings.php already exists but is not a symlink                                                     [warning]"
 fi
 
 # Ensure the files directory exists and has proper rights.
