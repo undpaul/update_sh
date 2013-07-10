@@ -71,17 +71,30 @@ More examples will be located in the update folder soon.
 
 ### Location
 
-We usually locate the update script (update.sh, update and shellwrapper folder)
+We use to locate the update script (update.sh, update and shellwrapper folder)
 within the sites/all/scripts of our drupal installation, due to restrictions in
 our current git deployment (drupal root is the root of the repository). A better
-way would to locate it outside of the docroot, but then you have to take in mind
+way is to locate it outside of the docroot. Thereofre you have to take in mind
 that the drush command for that application is only available with ajdusting the
 root directory (--root in drush command or cd to the drupal root).
+
+The snippet in  [002_environment_auto.exportsh](https://github.com/undpaul/update_sh/blob/master/update/002_environment_auto.exportsh)
+takes care of that location. An associated `$DRUSH_PARAMS` variabel is buitl in
+[009_drush_params.exportsh](https://github.com/undpaul/update_sh/blob/master/update/009_drush_params.exportsh).
 
 ## Installation
 
 If the shellwrapper folder is empty, you have to download it from
 https://github.com/undpaul/shellwrapper and place it in /shellwrapper.
+
+## Read more
+
+In our [undpaul Blog](http://www.undpaul.de/en/blog) you can read more about our
+procedures using drush and shell scripts.
+
+* [Simplify your development workflow with Drush and scripts](http://www.undpaul.de/en/blog/2013/06/26/simplify-your-development-workflow-drush-and-scripts) [en]
+* [Drupal-Konfiguration managen und ausrollen
+](http://www.undpaul.de/blog/2013/06/27/drupal-konfiguration-managen-und-ausrollen) [de]
 
 ## Contact
 
