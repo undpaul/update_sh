@@ -84,8 +84,18 @@ takes care of that location. An associated `$DRUSH_PARAMS` variabel is buitl in
 
 ## Installation
 
-If the shellwrapper folder is empty, you have to download it from
-https://github.com/undpaul/shellwrapper and place it in /shellwrapper.
+### Option 1 (git clone)
+
+You can checkout the whole script (including submodules) with:
+```
+git clone --recursive https://github.com/undpaul/update_sh.git update_sh
+```
+
+### Option 2 (archive)
+
+Download the [archive](https://github.com/undpaul/update_sh/archive/master.zip) and unpack it. The  
+`shellwrapper` folder will be empty then, so you have to download it from
+https://github.com/undpaul/shellwrapper and place it in `/shellwrapper` by yourself.
 
 ## Read more
 
