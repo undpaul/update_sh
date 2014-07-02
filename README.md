@@ -28,7 +28,7 @@ way we need it.
 The update script relies on bash. It may work with other shells, but is not yet
 tested with those.
 
-Simply call "sh update.sh TAGNAME" to call the shellwrapped scripts.
+Simply call "bash update.sh TAGNAME" to call the shellwrapped scripts.
 
 ## Shellwrapper
 
